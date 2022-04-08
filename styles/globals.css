@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+body {
+    background: #555584;
+    font-family: 'Beau Rivage', cursive;
+}
+
+.rubik {
+    font-family: 'Rubik Wet Paint', cursive;
+}
+
+.twitch .twitch-video {
+    padding-top: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.twitch .twitch-video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.twitch .twitch-chat {
+    height: 400px;
+}
+
+.twitch .twitch-chat iframe {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 850px) {
+    .twitch {
+        position: relative;
+    }
+    .twitch .twitch-video {
+        width: 75%;
+        padding-top: 42.1875%;
+    }
+    .twitch .twitch-chat {
+        width: 25%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .media {
+        width: 100%;
+    }
+    .admin-media {
+        flex-wrap: wrap;
+    }
+}
+
+.board ol {
+    counter-reset: number;
+}
+
+.board li {
+    padding: 16px;
+    display: flex;
+}
+
+.board li mark {
+    flex-grow: 1;
+    color: snow;
+    background-color: transparent;
+}
+
+.board li:before {
+    counter-increment: number;
+    content: counter(number) ".";
+    margin-right: 4px;
+}
+
+.board li {
+    background: #252142;
+}
+
+.lsidebar {
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .lsidebar {
+        display: block;
+    }
+}
+
+.content {
+    overflow: hidden;
+}

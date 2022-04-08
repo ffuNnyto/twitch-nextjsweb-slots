@@ -1,0 +1,24 @@
+<div className="container bg-pink w-10/12 bg-blue-200 ">
+                    <div className="twitch mx-auto">
+                        <div className="twitch-video mx-auto ">
+                            <iframe
+                                src="https://player.twitch.tv/?channel=andypsx&parent=localhost&autoplay=false"
+                                frameborder="0"
+                                scrolling="no"
+                                allowfullscreen="true"
+                                width="100%">
+                            </iframe>
+                        </div>
+                        <div className="twitch-chat">
+                            <iframe
+                                frameborder="0"
+                                scrolling="no"
+                                src="https://www.twitch.tv/embed/andypsx/chat?parent=localhost&darkpopout"
+                                height="100%"
+                                width="100%">
+                            </iframe>
+                        </div>
+                        
+                    </div>
+                   
+                </div>
